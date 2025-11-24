@@ -4,6 +4,7 @@
       "role": "Assistant Professor",
       "department": "Department of Information Technology",
       "company": "Karpagam College of Engineering",
+      "logo": "/icons/kce.png",
       "location": "Coimbatore, Tamil Nadu",
       "period": "May 2014 – Present",
       "responsibilities": [
@@ -16,6 +17,7 @@
     {
       "role": "System Engineer",
       "company": "Infosys",
+      "logo": "/icons/infosys.jpeg",
       "location": "Thiruvananthapuram, Kerala",
       "period": "Jun 2011 – Sep 2012",
       "responsibilities": [

@@ -39,7 +39,8 @@ export function Experience() {
               <div className="md:w-40 flex justify-center md:justify-start">
                 <div className="w-24 h-24 rounded-xl border bg-gray-50 flex items-center justify-center overflow-hidden shadow-sm">
                   {/* You can replace with item.logo */}
-                  <span className="text-gray-400 text-sm">Logo</span>
+                  <img src={item.logo} alt="LOGO" />
+                  {/* <span className="text-gray-400 text-sm">Logo</span> */}
                 </div>
               </div>
 
