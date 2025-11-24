@@ -189,12 +189,12 @@ function Hero() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: `flex justify-center ${isVisible ? "animate-slide-in-right" : "opacity-0"}`,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative w-64 h-64 md:w-72 md:h-72",
+                        className: "relative w-64 h-64 md:w-96 md:h-96",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$user$2d$info$2e$json__$28$json$29$__["default"].profileImage || "/placeholder.svg",
                             alt: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$user$2d$info$2e$json__$28$json$29$__["default"].name,
-                            width: 320,
-                            height: 320,
+                            width: 400,
+                            height: 400,
                             className: "rounded-full shadow-2xl object-cover w-full h-full",
                             priority: true
                         }, void 0, false, {

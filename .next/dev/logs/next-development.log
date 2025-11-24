@@ -40,3 +40,23 @@ It can also happen if the client has a browser extension installed which messes 
 [00:05:54.969] Server  LOG      ✓ Compiled in 99ms
 [00:06:25.541] Server  LOG      ✓ Compiled in 136ms
 [00:06:29.097] Server  LOG      ✓ Compiled in 62ms
+[00:09:56.828] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:47.211] Server  LOG      ✓ Compiled in 40ms
+[00:10:49.579] Server  LOG      ✓ Compiled in 73ms
+[00:11:06.887] Server  LOG      ✓ Compiled in 37ms
+[00:11:09.801] Server  LOG      ✓ Compiled in 42ms
+[00:11:11.262] Server  LOG      ✓ Compiled in 43ms
+[00:11:13.506] Server  LOG      ✓ Compiled in 75ms
+[00:11:16.765] Server  LOG      ✓ Compiled in 111ms
+[00:11:20.375] Server  LOG      ✓ Compiled in 36ms
+[00:11:21.529] Server  LOG      ✓ Compiled in 34ms
+[00:11:22.951] Server  LOG      ✓ Compiled in 72ms
+[00:11:25.973] Server  LOG      ✓ Compiled in 63ms
+[00:11:28.532] Server  LOG      ✓ Compiled in 31ms
+[00:11:30.100] Server  LOG      ✓ Compiled in 36ms
+[00:11:33.754] Server  LOG      ✓ Compiled in 35ms
+[00:11:35.989] Server  LOG      ✓ Compiled in 32ms
+[00:11:41.360] Server  LOG      ✓ Compiled in 118ms
+[00:11:47.695] Server  LOG      ✓ Compiled in 82ms
+[00:11:51.767] Server  LOG      ✓ Compiled in 36ms
+[00:11:53.328] Server  LOG      ✓ Compiled in 62ms

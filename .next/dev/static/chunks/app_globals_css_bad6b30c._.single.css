@@ -4563,6 +4563,30 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:h-96 {
+      height: calc(var(--spacing) * 96);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:h-auto {
+      height: auto;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-1 {
+      width: calc(var(--spacing) * 1);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-9 {
+      width: calc(var(--spacing) * 9);
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:w-40 {
       width: calc(var(--spacing) * 40);
     }
@@ -4571,6 +4595,12 @@
   @media (min-width: 48rem) {
     .md\:w-72 {
       width: calc(var(--spacing) * 72);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-96 {
+      width: calc(var(--spacing) * 96);
     }
   }
 

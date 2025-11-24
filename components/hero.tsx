@@ -15,12 +15,12 @@ export function Hero() {
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className={`flex justify-center ${isVisible ? "animate-slide-in-right" : "opacity-0"}`}>
-          <div className="relative w-64 h-64 md:w-72 md:h-72">
+          <div className="relative w-64 h-64 md:w-96 md:h-96">
             <Image
               src={userInfo.profileImage || "/placeholder.svg"}
               alt={userInfo.name}
-              width={320}
-              height={320}
+              width={400}
+              height={400}
               className="rounded-full shadow-2xl object-cover w-full h-full"
               priority
             />
