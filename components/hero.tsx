@@ -29,32 +29,31 @@ export function Hero() {
 
         <div className="space-y-6">
           <div className={`space-y-4 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">{userInfo.name}</h1>
-            <p className="text-xl sm:text-2xl text-gray-600 font-light max-w-3xl stagger-2">{userInfo.title}</p>
-            <p className="text-base sm:text-lg text-gray-500 max-w-2xl leading-relaxed stagger-3">{userInfo.bio}</p>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance text-foreground">{userInfo.name}</h1>
+            <p className="text-xl sm:text-2xl text-muted-foreground font-light max-w-3xl stagger-2">{userInfo.title}</p>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed stagger-3">{userInfo.bio}</p>
           </div>
 
           <div className={`flex gap-4 pt-8 ${isVisible ? "animate-fade-in-up stagger-4" : "opacity-0"}`}>
             <a
               href="#contact"
-              className="px-6 py-3 text-white rounded-lg transition-all duration-300 font-medium hover:scale-105 active:scale-95"
-              style={{ backgroundColor: "#0071e3" }}
+              className="px-6 py-3 text-primary-foreground bg-primary rounded-lg transition-all duration-300 font-medium hover:scale-105 active:scale-95"
             >
               Get in Touch
             </a>
             <a
               href="#research"
-              className="px-6 py-3 border border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium hover:border-blue-600"
+              className="px-6 py-3 border border-border text-foreground rounded-lg hover:bg-muted transition-all duration-300 font-medium hover:border-primary group"
             >
               View Research
             </a>
           </div>
 
           <div
-            className={`flex gap-6 pt-8 text-sm text-gray-600 ${isVisible ? "animate-fade-in-up stagger-5" : "opacity-0"}`}
+            className={`flex gap-6 pt-8 text-sm text-muted-foreground ${isVisible ? "animate-fade-in-up stagger-5" : "opacity-0"}`}
           >
             {userInfo.socialLinks.map((link) => (
-              <a key={link.label} href={link.href} className="hover:text-blue-600 transition font-medium">
+              <a key={link.label} href={link.href} className="hover:text-primary transition font-medium">
                 {link.label}
               </a>
             ))}

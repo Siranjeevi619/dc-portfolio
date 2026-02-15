@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="bg-white text-gray-900">
+    <main className="bg-background text-foreground min-h-screen">
       <Header />
       <Hero />
       <About />

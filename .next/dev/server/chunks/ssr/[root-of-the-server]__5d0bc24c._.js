@@ -357,7 +357,7 @@ function Experience() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "space-y-10",
                     children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$experience$2e$json__$28$json$29$__["default"].experiences.map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: " bg-white border border-gray-200 rounded-2xl  shadow-sm hover:shadow-lg transition-all duration-300 p-8 flex flex-col md:flex-row gap-8 ",
+                            className: "   bg-white border border-gray-200 rounded-2xl    shadow-sm hover:shadow-lg transition-all duration-300   p-8 flex flex-col md:flex-row gap-8   ",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "md:w-40 flex justify-center md:justify-start",
