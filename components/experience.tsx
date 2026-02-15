@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import experienceData from "@/data/experience.json";
 
+import { ScrollAnimation } from "@/components/ui/scroll-animation";
+
 export function Experience() {
   const [mounted, setMounted] = useState(false);
 
@@ -16,22 +18,24 @@ export function Experience() {
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-16 text-center">
+        <ScrollAnimation className="mb-16 text-center">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
             Experience
           </h2>
           <p className="text-muted-foreground text-lg mt-2">
             My professional journey & contributions
           </p>
-        </div>
+        </ScrollAnimation>
 
         <div className="space-y-10">
           {experienceData.experiences.map((item, idx) => (
-            <div
+            <ScrollAnimation
               key={idx}
+              animation="fade-up"
+              delay={idx * 0.1}
               className="
                 bg-card border border-border rounded-2xl 
-                shadow-sm hover:shadow-lg transition-all duration-300
+                shadow-sm hover-card
                 p-8 flex flex-col md:flex-row gap-8
               "
             >
@@ -91,7 +95,7 @@ export function Experience() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
           ))}
         </div>
       </div>
