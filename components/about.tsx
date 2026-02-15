@@ -1,4 +1,5 @@
 import { ScrollAnimation } from "@/components/ui/scroll-animation"
+import { Counter } from "@/components/ui/counter"
 
 export function About() {
   return (
@@ -28,25 +29,33 @@ export function About() {
           <div className="grid grid-cols-2 gap-4">
             <ScrollAnimation animation="scale-up" delay={0.1}>
               <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">800+</div>
+                <div className="text-3xl font-bold text-primary mb-2">
+                  <Counter end={800} suffix="+" />
+                </div>
                 <p className="text-muted-foreground text-sm">Students Mentored</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="scale-up" delay={0.2}>
               <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">200+</div>
+                <div className="text-3xl font-bold text-primary mb-2">
+                  <Counter end={200} suffix="+" />
+                </div>
                 <p className="text-muted-foreground text-sm">Projects Supervised</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="scale-up" delay={0.3}>
               <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">15</div>
+                <div className="text-3xl font-bold text-primary mb-2">
+                  <Counter end={15} />
+                </div>
                 <p className="text-muted-foreground text-sm">SCI/SCIE Publications</p>
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="scale-up" delay={0.4}>
               <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                <div className="text-3xl font-bold text-primary mb-2">
+                  <Counter end={15} suffix="+" />
+                </div>
                 <p className="text-muted-foreground text-sm">Academic Reviewer</p>
               </div>
             </ScrollAnimation>
