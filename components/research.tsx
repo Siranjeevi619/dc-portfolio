@@ -1,3 +1,5 @@
+import { ScrollAnimation } from "@/components/ui/scroll-animation"
+
 export function Research() {
   const interests = [
     { title: "Artificial Intelligence", description: "Exploring machine learning and AI fundamentals" },
@@ -23,37 +25,39 @@ export function Research() {
   return (
     <section id="research" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-foreground">Research & Skills</h2>
+        <ScrollAnimation className="mb-12">
+          <h2 className="text-4xl font-bold text-foreground">Research & Skills</h2>
+        </ScrollAnimation>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
-          <div>
+          <ScrollAnimation animation="slide-right">
             <h3 className="text-2xl font-semibold mb-6 text-foreground">Research Interests</h3>
             <div className="space-y-4">
               {interests.map((interest, idx) => (
-                <div key={idx} className="p-4 bg-muted/50 rounded-lg hover:bg-primary/10 transition">
+                <div key={idx} className="p-4 bg-muted/50 rounded-lg hover-card transition">
                   <h4 className="font-semibold text-foreground">{interest.title}</h4>
                   <p className="text-muted-foreground text-sm mt-1">{interest.description}</p>
                 </div>
               ))}
             </div>
-          </div>
+          </ScrollAnimation>
 
-          <div>
+          <ScrollAnimation animation="slide-left" delay={0.2}>
             <h3 className="text-2xl font-semibold mb-6 text-foreground">Technical Skills</h3>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-2 bg-primary/10 text-primary rounded-lg text-sm font-medium border border-primary/20 hover:bg-primary/20 transition"
+                  className="px-4 py-2 bg-primary/10 text-primary rounded-lg text-sm font-medium border border-primary/20 hover:bg-primary/20 transition hover:scale-105"
                 >
                   {skill}
                 </span>
               ))}
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
 
-        <div className="bg-muted/30 p-8 rounded-lg">
+        <ScrollAnimation animation="fade-up" delay={0.4} className="bg-muted/30 p-8 rounded-lg">
           <h3 className="text-2xl font-semibold mb-4 text-foreground">Certifications & Honors</h3>
           <ul className="space-y-3">
             <li className="flex gap-3">
@@ -75,7 +79,7 @@ export function Research() {
               <span className="text-primary">✓</span> <span className="text-muted-foreground">Anna University Rank Holder - 6th Rank (May 2014)</span>
             </li>
           </ul>
-        </div>
+        </ScrollAnimation>
       </div>
     </section>
   )
