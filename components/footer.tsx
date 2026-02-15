@@ -24,7 +24,7 @@ export function Footer() {
   return (
     <footer className="bg-muted text-muted-foreground py-12 px-4 sm:px-6 lg:px-8">
       <div id="footer-content" className={`max-w-7xl mx-auto ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-12 text-center md:text-left">
           <div className={`${isVisible ? "animate-fade-in-up stagger-1" : "opacity-0"}`}>
             <h4 className="font-semibold text-foreground mb-4">About</h4>
             <p className="text-sm leading-relaxed">
