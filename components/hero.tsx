@@ -27,14 +27,14 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-6 text-center md:text-left">
           <div className={`space-y-4 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance text-foreground">{userInfo.name}</h1>
             <p className="text-xl sm:text-2xl text-muted-foreground font-light max-w-3xl stagger-2">{userInfo.title}</p>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed stagger-3">{userInfo.bio}</p>
           </div>
 
-          <div className={`flex gap-4 pt-8 ${isVisible ? "animate-fade-in-up stagger-4" : "opacity-0"}`}>
+          <div className={`flex justify-center md:justify-start gap-4 pt-8 ${isVisible ? "animate-fade-in-up stagger-4" : "opacity-0"}`}>
             <a
               href="#contact"
               className="px-6 py-3 text-primary-foreground bg-primary rounded-lg transition-all duration-300 font-medium hover:scale-105 active:scale-95"
@@ -50,7 +50,7 @@ export function Hero() {
           </div>
 
           <div
-            className={`flex gap-6 pt-8 text-sm text-muted-foreground ${isVisible ? "animate-fade-in-up stagger-5" : "opacity-0"}`}
+            className={`flex justify-center md:justify-start gap-6 pt-8 text-sm text-muted-foreground ${isVisible ? "animate-fade-in-up stagger-5" : "opacity-0"}`}
           >
             {userInfo.socialLinks.map((link) => (
               <a key={link.label} href={link.href} className="hover:text-primary transition font-medium">
