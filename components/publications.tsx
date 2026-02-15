@@ -27,31 +27,31 @@ export function Publications() {
   ]
 
   return (
-    <section id="publications" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="publications" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold mb-4">Publications</h2>
-        <p className="text-gray-600 mb-12 text-lg">15 SCI/SCIE • 2 Scopus • 1 Book Chapter</p>
+        <h2 className="text-4xl font-bold mb-4 text-foreground">Publications</h2>
+        <p className="text-muted-foreground mb-12 text-lg">15 SCI/SCIE • 2 Scopus • 1 Book Chapter</p>
 
         <div className="space-y-6">
           {publications.map((pub, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-600 transition">
+            <div key={idx} className="bg-card p-6 rounded-lg border border-border hover:border-primary transition group">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
                 <div className="flex-1">
-                  <h3 className="font-semibold text-gray-900 leading-relaxed">{pub.title}</h3>
-                  <p className="text-gray-600 mt-2">{pub.journal}</p>
+                  <h3 className="font-semibold text-card-foreground leading-relaxed">{pub.title}</h3>
+                  <p className="text-muted-foreground mt-2">{pub.journal}</p>
                 </div>
                 <div className="flex gap-2 whitespace-nowrap">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">{pub.type}</span>
-                  <span className="text-gray-500 font-medium">{pub.year}</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary rounded text-xs font-medium">{pub.type}</span>
+                  <span className="text-muted-foreground font-medium">{pub.year}</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 p-6 bg-blue-50 rounded-lg border border-blue-200 text-center">
-          <p className="text-gray-700 mb-4">View all publications and research contributions</p>
-          <a href="#" className="text-blue-600 font-semibold hover:underline">
+        <div className="mt-12 p-6 bg-primary/5 rounded-lg border border-primary/10 text-center">
+          <p className="text-muted-foreground mb-4">View all publications and research contributions</p>
+          <a href="#" className="text-primary font-semibold hover:underline">
             See Complete Publication List →
           </a>
         </div>
