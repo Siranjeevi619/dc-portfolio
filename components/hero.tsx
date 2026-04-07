@@ -25,11 +25,10 @@ export function Hero() {
 
         <div className="space-y-6 text-center md:text-left">
           <ScrollAnimation animation="fade-up" delay={0.2} className="space-y-4">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gradient pb-2" style={{ whiteSpace: "nowrap" }}>{userInfo.name}</h1>
+            <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold tracking-tight text-gradient pb-2">{userInfo.name}</h1>
             <p className="text-xl sm:text-2xl text-muted-foreground font-light max-w-3xl">
               Assistant Professor | AI & Deep Learning Researcher | IEEE & ACM Member | NLP Specialist
             </p>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">{userInfo.bio}</p>
           </ScrollAnimation>
           <ScrollAnimation animation="fade-up" delay={0.4} className="flex flex-wrap justify-center md:justify-start gap-4 pt-8">
             <a
