@@ -62,13 +62,33 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a
+                  href="https://orcid.org/0000-0002-5427-9460"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition"
+                >
                   ORCID Profile
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a
+                  href="https://www.scopus.com/authid/detail.uri?authorId=57214457052"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition"
+                >
                   Scopus
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.webofscience.com/wos/author/record/AAP-1618-2021"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition"
+                >
+                  ResearcherID
                 </a>
               </li>
             </ul>

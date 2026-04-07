@@ -1,12 +1,25 @@
 {
   "experiences": [
     {
+      "role": "Associate Professor",
+      "department": "Dept. of Information Technology",
+      "company": "Karpagam College of Engineering",
+      "logo": "/icons/kce.png",
+      "location": "Coimbatore, Tamil Nadu",
+      "period": "June 2025 – Present",
+      "responsibilities": [
+        "Specializing in AI & Deep Learning research and advanced instruction",
+        "Leading research initiatives in NLP and Healthcare AI",
+        "Mentoring Ph.D. scholars and coordinating industry collaborations"
+      ]
+    },
+    {
       "role": "Assistant Professor",
       "department": "Dept. of Information Technology",
       "company": "Karpagam College of Engineering",
       "logo": "/icons/kce.png",
       "location": "Coimbatore, Tamil Nadu",
-      "period": "May 2014 – Present",
+      "period": "May 2014 – May 2025",
       "responsibilities": [
         "Teaching and mentoring students in the Department of Information Technology",
         "Research in AI, Deep Learning, and NLP",

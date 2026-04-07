@@ -1,10 +1,9 @@
 {
   "name": "Dr. Jothi Prakash V",
-  "title": "Assistant Professor | AI & Deep Learning Researcher | NLP Specialist",
+  "title": "Associate Professor | AI & Deep Learning Researcher | IEEE & ACM Member | NLP Specialist",
   "profileImage": "/images/profile.jpg",
-  "bio": "Assistant Professor in the Department of Information Technology at Karpagam College of Engineering, with over a decade of teaching and research experience. Ph.D. in Information Technology from Anna University (2023) focused on hybrid feature selection and deep ensemble models for healthcare AI.",
+  "bio": "I am an Associate Professor in the Department of Information Technology at Karpagam College of Engineering, Coimbatore, with over a decade of teaching and research experience. I hold a Ph.D. in Information Technology from Anna University Chennai (2023), where my doctoral research focused on hybrid feature selection and deep ensemble models for cardiovascular disease classification.\nMy research spans Deep Learning, Natural Language Processing, Sentiment Analysis, Soft Computing, Immersive Technologies, and Healthcare AI. With 32 published works — including papers in IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Journal of Biomedical and Health Informatics, ACM Transactions, and Knowledge-Based Systems — I am committed to bridging academic rigor with real-world impact.\nBeyond research, I bring strong industry exposure: I served as a Systems Engineer at Infosys and hold multiple Wipro Advanced Technology certifications in AI/ML and Big Data. I achieved 1st place in two all-India team-based competitions organised by Wipro Technologies, earning Gold Certificates in both Big Data and AI/ML — a recognition of my passion for project-based, applied learning.\nI am an active member of both IEEE and ACM, and serve as a peer reviewer for journals including Knowledge-Based Systems, Expert Systems with Applications, IEEE Access, and Neural Computing & Applications.",
   "email": "jothiprakashv@gmail.com",
-  "phone": "+91 9677504541",
   "location": "Coimbatore, Tamil Nadu, India",
   "qualifications": "M.Tech., Ph.D.",
   "orcid": "0000-0002-5427-9460",
@@ -12,9 +11,18 @@
   "scopusId": "57214457052",
   "socialLinks": [
     { "label": "Email", "href": "mailto:jothiprakashv@gmail.com" },
-    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/jothiprakashv" },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/jothiprakashv"
+    },
     { "label": "ORCID", "href": "https://orcid.org/0000-0002-5427-9460" },
-    { "label": "Scopus", "href": "https://www.scopus.com/authid/detail.uri?authorId=57214457052" },
-    { "label": "ResearcherID", "href": "https://www.webofscience.com/wos/author/record/AAP-1618-2021" }
+    {
+      "label": "Scopus",
+      "href": "https://www.scopus.com/authid/detail.uri?authorId=57214457052"
+    },
+    {
+      "label": "ResearcherID",
+      "href": "https://www.webofscience.com/wos/author/record/AAP-1618-2021"
+    }
   ]
 }
