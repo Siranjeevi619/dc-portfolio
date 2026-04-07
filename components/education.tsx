@@ -7,7 +7,7 @@ export function Education() {
       field: "Information Technology",
       institution: "Anna University",
       location: "Chennai, Tamil Nadu",
-      year: "Aug 2023",
+      year: "July 2017 – Aug 2023",
       thesis: "Design of Hybrid Feature Selection and Deep Ensemble Models for Cardiovascular Disease Classification",
       honor: "Highly Commended",
     },

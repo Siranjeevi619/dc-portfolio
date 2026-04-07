@@ -100,7 +100,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\Siranjeevi\\dc-portfolio",
+    "outputFileTracingRoot": "C:\\Users\\Siranjeevi\\dc-portfolio\\dc-portfolio",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -293,11 +293,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "C:\\Users\\Siranjeevi\\dc-portfolio"
+      "root": "C:\\Users\\Siranjeevi\\dc-portfolio\\dc-portfolio"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\Siranjeevi\\dc-portfolio",
+  "appDir": "C:\\Users\\Siranjeevi\\dc-portfolio\\dc-portfolio",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

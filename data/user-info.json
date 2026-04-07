@@ -1,8 +1,8 @@
 {
   "name": "Dr. Jothi Prakash V",
   "title": "Assistant Professor | AI & Deep Learning Researcher | NLP Specialist",
-  "profileImage": "/images/whatsapp-20image-202025-11-20-20at-2016.jpg",
-  "bio": "Passionate about advancing artificial intelligence and computational intelligence through innovative research and education. PhD in Information Technology from Anna University with expertise in deep learning, natural language processing, and healthcare AI.",
+  "profileImage": "/images/profile.jpg",
+  "bio": "Assistant Professor in the Department of Information Technology at Karpagam College of Engineering, with over a decade of teaching and research experience. Ph.D. in Information Technology from Anna University (2023) focused on hybrid feature selection and deep ensemble models for healthcare AI.",
   "email": "jothiprakashv@gmail.com",
   "phone": "+91 9677504541",
   "location": "Coimbatore, Tamil Nadu, India",
@@ -12,8 +12,9 @@
   "scopusId": "57214457052",
   "socialLinks": [
     { "label": "Email", "href": "mailto:jothiprakashv@gmail.com" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/jothiprakashv" },
     { "label": "ORCID", "href": "https://orcid.org/0000-0002-5427-9460" },
     { "label": "Scopus", "href": "https://www.scopus.com/authid/detail.uri?authorId=57214457052" },
-    { "label": "ResearcherID", "href": "https://publons.com/researcher/AAP-1618-2021/" }
+    { "label": "ResearcherID", "href": "https://www.webofscience.com/wos/author/record/AAP-1618-2021" }
   ]
 }

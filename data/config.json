@@ -7,7 +7,7 @@
     "success": "#34c759",
     "warning": "#ff9500"
   },
-  "navbarTitle": "JEO",
+  "navbarTitle": "JPV",
   "navLinks": [
     { "label": "About", "href": "#about" },
     { "label": "Education", "href": "#education" },
