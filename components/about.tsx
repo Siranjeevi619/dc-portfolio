@@ -1,128 +1,163 @@
+"use client"
+
+import { BookOpen, Globe, Search, Award, Users, Trophy, Star } from "lucide-react"
 import { ScrollAnimation } from "@/components/ui/scroll-animation"
 import { Counter } from "@/components/ui/counter"
 
 export function About() {
+  const stats = [
+    {
+      label: "Total Publications",
+      value: 32,
+      suffix: "",
+      subtext: "From ORCID Profile",
+      icon: <BookOpen className="w-5 h-5" />,
+      delay: 0.1,
+    },
+    {
+      label: "SCI / SCIE Journals",
+      value: 25,
+      suffix: "+",
+      subtext: "Indexed Works",
+      icon: <Globe className="w-5 h-5" />,
+      delay: 0.2,
+    },
+    {
+      label: "Academic Peer Reviews",
+      value: 21,
+      suffix: "",
+      subtext: "Across 8 Journals",
+      icon: <Search className="w-5 h-5" />,
+      delay: 0.3,
+    },
+    {
+      label: "Teaching Experience",
+      value: 12,
+      suffix: "+",
+      subtext: "In Years (Since 2014)",
+      icon: <Users className="w-5 h-5" />,
+      delay: 0.4,
+    },
+  ]
+
+  const achievements = [
+    {
+      title: "1st Place Gold Certificate",
+      description: "All-India Big Data Project Competition, Wipro Technologies",
+      icon: <Trophy className="w-4 h-4 text-yellow-500" />,
+      bg: "bg-yellow-500/10",
+    },
+    {
+      title: "1st Place Gold Certificate",
+      description: "All-India AI & ML Project Competition, Wipro Technologies",
+      icon: <Trophy className="w-4 h-4 text-yellow-500" />,
+      bg: "bg-yellow-500/10",
+    },
+    {
+      title: "Anna University Rank Holder",
+      description: "6th Rank (M.Tech, May 2014)",
+      icon: <Award className="w-4 h-4 text-primary" />,
+      bg: "bg-primary/10",
+    },
+    {
+      title: "Best Faculty of the College",
+      description: "Cognizant Technology Solutions (April 2016)",
+      icon: <Star className="w-4 h-4 text-green-500" />,
+      bg: "bg-green-500/10",
+    },
+  ]
+
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/50">
+    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Decorative Background Element */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/2 -z-10" />
+
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <ScrollAnimation animation="slide-right" className="space-y-6">
-            <h2 className="text-4xl font-bold text-foreground">About</h2>
-              <p className="leading-relaxed">
+        <div className="flex flex-col mb-12">
+          <ScrollAnimation animation="fade-up">
+            <span className="text-primary font-mono text-sm tracking-widest uppercase mb-2 block">01 / ABOUT ME</span>
+            <h2 className="text-4xl sm:text-5xl font-bold text-foreground">A Passion for Learning & Innovation</h2>
+            <div className="h-1.5 w-20 bg-primary mt-4 rounded-full" />
+          </ScrollAnimation>
+        </div>
+
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-16">
+          <div className="lg:col-span-7 space-y-8">
+            <ScrollAnimation animation="slide-right" className="space-y-6">
+              <p className="text-lg leading-relaxed text-muted-foreground text-justify">
                 I am an Associate Professor in the Department of Information Technology at Karpagam College of
                 Engineering, Coimbatore, with over a decade of teaching and research experience. I hold a Ph.D. in
                 Information Technology from Anna University Chennai (2023), where my doctoral research focused on
                 hybrid feature selection and deep ensemble models for cardiovascular disease classification.
               </p>
-              <p className="leading-relaxed">
-                My research spans Deep Learning, Natural Language Processing, Sentiment Analysis, Soft Computing,
-                Immersive Technologies, and Healthcare AI. With 32 published works — including papers in IEEE
-                Transactions on Pattern Analysis and Machine Intelligence, IEEE Journal of Biomedical and Health
-                Informatics, ACM Transactions, and Knowledge-Based Systems — I am committed to bridging academic rigor
-                with real-world impact.
+              <p className="text-lg leading-relaxed text-muted-foreground text-justify">
+                My research spans <span className="text-foreground font-medium">Deep Learning, Natural Language Processing, Sentiment Analysis, Soft Computing, Immersive Technologies, and Healthcare AI</span>.
+                With 32 published works including papers in top-tier journals like IEEE Transactions and ACM Transactions,
+                I am committed to bridging academic rigor with real-world impact.
               </p>
-              <p className="leading-relaxed">
-                Beyond research, I bring strong industry exposure: I served as a Systems Engineer at Infosys and hold
-                multiple Wipro Advanced Technology certifications in AI/ML and Big Data. I achieved 1st place in two
-                all-India team-based competitions organised by Wipro Technologies, earning Gold Certificates in both
-                Big Data and AI/ML — a recognition of my passion for project-based, applied learning.
+              <p className="text-lg leading-relaxed text-muted-foreground text-justify">
+                Beyond research, I bring strong industry exposure from my time as a Systems Engineer at <span className="text-foreground font-medium">Infosys</span>.
+                I hold multiple Wipro Advanced Technology certifications and achieved 1st place in two all-India team-based competitions,
+                reflecting my passion for project-based, applied learning.
               </p>
-              <p className="leading-relaxed">
-                I am an active member of both IEEE and ACM, and serve as a peer reviewer for journals including
-                Knowledge-Based Systems, Expert Systems with Applications, IEEE Access, and Neural Computing &
-                Applications.
-              </p>
+            </ScrollAnimation>
+          </div>
 
-              <div className="pt-6 space-y-4">
-                <h3 className="text-xl font-bold text-foreground">Achievements Highlight</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-yellow-500/20 p-1 rounded">
-                      <svg className="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
+          <div className="lg:col-span-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {stats.map((stat) => (
+                <ScrollAnimation key={stat.label} animation="scale-up" delay={stat.delay}>
+                  <div className="bg-card p-6 rounded-2xl border border-border hover:border-primary/40 transition-all group relative overflow-hidden h-full shadow-sm hover:shadow-md">
+                    <div className="absolute top-0 right-0 p-4 text-primary/10 group-hover:text-primary/20 transition-colors">
+                      {stat.icon}
                     </div>
-                    <div>
-                      <p className="text-sm font-semibold">1st Place (Gold Certificate)</p>
-                      <p className="text-xs text-muted-foreground">All-India Big Data Project Competition, Wipro Technologies, Bangalore</p>
+                    <div className="text-4xl font-bold text-primary mb-2 flex items-baseline gap-1">
+                      <Counter end={stat.value} suffix={stat.suffix} />
                     </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-yellow-500/20 p-1 rounded">
-                      <svg className="w-4 h-4 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold">1st Place (Gold Certificate)</p>
-                      <p className="text-xs text-muted-foreground">All-India AI & ML Project Competition, Wipro Technologies, Bangalore</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-blue-500/20 p-1 rounded">
-                      <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold">Anna University Rank Holder</p>
-                      <p className="text-xs text-muted-foreground">6th Rank (M.Tech, May 2014)</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-green-500/20 p-1 rounded">
-                      <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold">Best Faculty of the College</p>
-                      <p className="text-xs text-muted-foreground">Cognizant Technology Solutions (April 2016)</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-          </ScrollAnimation>
+                    <p className="text-foreground font-semibold text-sm mb-1">{stat.label}</p>
+                    <p className="text-[11px] text-muted-foreground font-medium uppercase tracking-tight italic">
+                      {stat.subtext}
+                    </p>
+                  </div>
+                </ScrollAnimation>
+              ))}
+            </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <ScrollAnimation animation="scale-up" delay={0.1}>
-              <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  <Counter end={32} />
+            <ScrollAnimation animation="fade-up" delay={0.5} className="mt-8">
+              <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
+                <p className="text-sm text-muted-foreground italic leading-relaxed">
+                  "I am an active member of both IEEE and ACM, and serve as a peer reviewer for prestigious journals including Knowledge-Based Systems and Expert Systems with Applications."
+                </p>
+                <div className="mt-4 flex gap-4">
+                  <span className="text-xs font-bold text-primary px-3 py-1 bg-primary/10 rounded-full">IEEE Member</span>
+                  <span className="text-xs font-bold text-primary px-3 py-1 bg-primary/10 rounded-full">ACM Member</span>
                 </div>
-                <p className="text-muted-foreground text-sm font-medium">Total Publications</p>
-                <p className="text-[10px] text-muted-foreground/60 italic">From ORCID Profile</p>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation animation="scale-up" delay={0.2}>
-              <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  <Counter end={25} suffix="+" />
-                </div>
-                <p className="text-muted-foreground text-sm font-medium">SCI / SCIE Journals</p>
-                <p className="text-[10px] text-muted-foreground/60 italic">Indexed Works</p>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation animation="scale-up" delay={0.3}>
-              <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  <Counter end={21} />
-                </div>
-                <p className="text-muted-foreground text-sm font-medium">Academic Peer Reviews</p>
-                <p className="text-[10px] text-muted-foreground/60 italic">Across 8 Journals</p>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation animation="scale-up" delay={0.4}>
-              <div className="bg-card p-6 rounded-lg border border-border hover-card transition group h-full">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  <Counter end={12} suffix="+" />
-                </div>
-                <p className="text-muted-foreground text-sm font-medium">Teaching Experience</p>
-                <p className="text-[10px] text-muted-foreground/60 italic">Since May 2014</p>
               </div>
             </ScrollAnimation>
           </div>
         </div>
+
+        <ScrollAnimation animation="fade-up" delay={0.2}>
+          <div className="border-t border-border pt-12">
+            <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-2">
+              <Award className="w-6 h-6 text-primary" />
+              Achievements Highlight
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {achievements.map((item, idx) => (
+                <div key={idx} className="p-5 rounded-2xl border border-border bg-card/50 backdrop-blur-sm flex flex-col gap-4 items-start hover:border-primary/30 transition-all hover:shadow-lg group">
+                  <div className={`p-2.5 rounded-xl ${item.bg} group-hover:scale-110 transition-transform`}>
+                    {item.icon}
+                  </div>
+                  <div>
+                    <p className="font-bold text-base leading-tight text-foreground mb-2">{item.title}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   )

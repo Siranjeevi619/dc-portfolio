@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import experienceData from "@/data/experience.json";
-
 import { ScrollAnimation } from "@/components/ui/scroll-animation";
 
 export function Experience() {
@@ -42,9 +41,7 @@ export function Experience() {
               {/* LOGO COLUMN (LinkedIn style) */}
               <div className="md:w-40 flex justify-center md:justify-start">
                 <div className="w-24 h-24 rounded-xl border border-border bg-muted flex items-center justify-center overflow-hidden shadow-sm">
-                  {/* You can replace with item.logo */}
                   <img src={item.logo} alt="LOGO" />
-                  {/* <span className="text-muted-foreground text-sm">Logo</span> */}
                 </div>
               </div>
 

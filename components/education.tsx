@@ -1,31 +1,7 @@
+import education from "@/data/education.json"
 import { ScrollAnimation } from "@/components/ui/scroll-animation"
 
 export function Education() {
-  const education = [
-    {
-      degree: "Doctor of Philosophy (PhD)",
-      field: "Information Technology",
-      institution: "Anna University",
-      location: "Chennai, Tamil Nadu",
-      year: "July 2017 – Aug 2023",
-      thesis: "Design of Hybrid Feature Selection and Deep Ensemble Models for Cardiovascular Disease Classification",
-      honor: "Highly Commended",
-    },
-    {
-      degree: "Master of Technology (M.Tech)",
-      field: "Information Technology",
-      institution: "SNS College of Technology",
-      location: "Coimbatore, Tamil Nadu",
-      year: "May 2014",
-    },
-    {
-      degree: "Bachelor of Technology (B.Tech)",
-      field: "Information Technology",
-      institution: "Karpagam College of Engineering",
-      location: "Coimbatore, Tamil Nadu",
-      year: "May 2011",
-    },
-  ]
 
   return (
     <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
