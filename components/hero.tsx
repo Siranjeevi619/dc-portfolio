@@ -28,9 +28,9 @@ export function Hero() {
           <ScrollAnimation
             animation="blur-in"
             duration={1}
-            className="relative w-72 h-72 md:w-[450px] md:h-[450px] p-2 md:p-3 rounded-full bg-gradient-to-b from-primary/20 to-transparent shadow-2xl"
+            className="relative w-80 h-96 md:w-[480px] md:h-[600px] overflow-hidden rounded-3xl shadow-2xl"
           >
-            <div className="w-full h-full rounded-full overflow-hidden border-4 border-background shadow-inner">
+            <div className="w-full h-full">
               <Image
                 src={userInfo.profileImage || "/placeholder.svg"}
                 alt={userInfo.name}
