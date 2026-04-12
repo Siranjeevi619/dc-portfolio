@@ -97,7 +97,13 @@ export function Hero() {
             className="flex justify-center md:justify-start gap-6 pt-8 text-sm text-muted-foreground"
           >
             {userInfo.socialLinks.map((link) => (
-              <a key={link.label} href={link.href} className="hover:text-primary transition font-medium">
+              <a 
+                key={link.label} 
+                href={link.href} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition font-medium"
+              >
                 {link.label}
               </a>
             ))}

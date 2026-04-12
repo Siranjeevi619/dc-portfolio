@@ -92,7 +92,7 @@ export function About() {
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground text-justify">
                 My research spans <span className="text-foreground font-medium">Deep Learning, Natural Language Processing, Sentiment Analysis, Soft Computing, Immersive Technologies, and Healthcare AI</span>.
-                With 32 published works including papers in top-tier journals like IEEE Transactions and ACM Transactions,
+                With 32 published works including papers in top-tier journals like <span className="font-bold text-foreground underline decoration-primary/30">IEEE Transactions and ACM Transactions</span>,
                 I am committed to bridging academic rigor with real-world impact.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground text-justify">
@@ -124,14 +124,17 @@ export function About() {
             </div>
 
             <ScrollAnimation animation="fade-up" delay={0.5} className="mt-8">
-              <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
-                <p className="text-sm text-muted-foreground italic leading-relaxed">
-                  "I am an active member of both IEEE and ACM, and serve as a peer reviewer for prestigious journals including Knowledge-Based Systems and Expert Systems with Applications."
+              <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10 space-y-4">
+                <p className="text-2xl font-bold text-foreground leading-relaxed text-center font-arima">
+                  தொட்டனைத் தூறும் மணற்கேணி மாந்தர்க்குக் <br/> கற்றனைத் தூறும் அறிவு.
                 </p>
-                <div className="mt-4 flex gap-4">
-                  <span className="text-xs font-bold text-primary px-3 py-1 bg-primary/10 rounded-full">IEEE Member</span>
-                  <span className="text-xs font-bold text-primary px-3 py-1 bg-primary/10 rounded-full">ACM Member</span>
-                </div>
+                <p className="text-sm text-muted-foreground italic leading-relaxed text-center">
+                  "In sandy soil, when deep you delve, you reach the springs below; <br/> 
+                  The more you learn, the freer streams of wisdom flow"
+                </p>
+                <p className="text-[10px] font-semibold text-primary/80 uppercase tracking-widest text-center border-t border-primary/10 pt-4">
+                  — Kural 396, Thiruvalluvar
+                </p>
               </div>
             </ScrollAnimation>
           </div>

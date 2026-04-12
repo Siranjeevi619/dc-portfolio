@@ -1,11 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Arima } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const arima = Arima({ subsets: ["latin", "tamil"], weight: ["400", "700"], variable: "--font-arima" })
 
 export const metadata: Metadata = {
   title: "Dr. Jothi Prakash V | Professor & Researcher",
@@ -37,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased ${arima.variable}`}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
